@@ -4,9 +4,30 @@ A comprehensive and step-by-step approach to learning back-end service developme
 
 ## Table of contents
 
-TODO
-[toc]
-
+- [Disclaimer](#disclaimer)
+- [Requirements](#requirements)
+- [Chapter 1 - What is Node](#chapter-1)
+  - ...
+- [Chapter 2 - Running Javascript in the terminal](#chapter-2)
+  - ...
+- [Chapter 3 - Building a script](#chapter-3)
+  - ...
+- [Chapter 4 - Modules and dependencies](#chapter-4)
+  - ...
+- [Chapter 5 - Web servers, the basics](#chapter-5)
+  - ...
+- [Chapter 6 - Express, middlewares and the Rails way](#chapter-6)
+  - ...
+- [Chapter 7 - Adding data](#chapter-7)
+  - ...
+- [Chapter 8 - Tests](#chapter-8)
+  - ...
+- [Chapter 9 - Docs and validation](#chapter-9)
+  - ...
+- [Chapter 10 - Moving to production](#chapter-10)
+  - ...
+- [Epilogue](#epilogue)
+- [Acknowledgements](#acknowledgements)
 
 #### Disclaimer
 
@@ -40,6 +61,7 @@ The exercices will use the syntax and features of Node 4+
 
 
 [top](#table-of-contents)
+
 ---
 
 ## Chapter 2
@@ -47,13 +69,15 @@ The exercices will use the syntax and features of Node 4+
 
 
 [top](#table-of-contents)
+
 ---
 
 ## Chapter 3
-*Building a script that reads from disk*
+*Building a script*
 
 
 [top](#table-of-contents)
+
 ---
 
 ## Chapter 4
@@ -61,6 +85,7 @@ The exercices will use the syntax and features of Node 4+
 
 
 [top](#table-of-contents)
+
 ---
 
 ## Chapter 5
@@ -68,6 +93,7 @@ The exercices will use the syntax and features of Node 4+
 
 
 [top](#table-of-contents)
+
 ---
 
 ## Chapter 6
@@ -75,13 +101,15 @@ The exercices will use the syntax and features of Node 4+
 
 
 [top](#table-of-contents)
+
 ---
 
 ## Chapter 7
-*Getting data*
+*Adding data*
 
 
 [top](#table-of-contents)
+
 ---
 
 ## Chapter 8
@@ -89,13 +117,15 @@ The exercices will use the syntax and features of Node 4+
 
 
 [top](#table-of-contents)
+
 ---
 
 ## Chapter 9
-*Docs and validation with swagger*
+*Docs and validation*
 
 
 [top](#table-of-contents)
+
 ---
 
 ## Chapter 10
@@ -103,6 +133,7 @@ The exercices will use the syntax and features of Node 4+
 
 
 [top](#table-of-contents)
+
 ---
 
 ## Epilogue
@@ -110,6 +141,7 @@ The exercices will use the syntax and features of Node 4+
 
 
 [top](#table-of-contents)
+
 ---
 
 ## Acknowledgements
@@ -117,4 +149,5 @@ The exercices will use the syntax and features of Node 4+
 
 
 [top](#table-of-contents)
+
 ---
