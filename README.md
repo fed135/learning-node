@@ -5,9 +5,11 @@ A comprehensive and step-by-step approach to learning back-end service developme
 ## Table of contents
 
 - [Disclaimer](#disclaimer)
-- [Requirements](#requirements)
+- [Prerequisite](#prerequisite)
 - [Chapter 1 - What is Node](#chapter-1)
-  - ...
+  - [In a nut(shell)](#in-a-nutshell)
+  - [The event loop](#the-event-loop)
+  - [Added features](#added-features)
 - [Chapter 2 - Running Javascript in the terminal](#chapter-2)
   - ...
 - [Chapter 3 - Building a script](#chapter-3)
@@ -74,7 +76,7 @@ Consider this illustration that explains how the event loop works.
 
 ### Added features
 
-It's important to understand the difference between Javascript in the browser and Javascript in Node. Browsers have V8 included, which allows them to parse and compile Javascript- the basic set of instructions- plus a set of browser-specific features. For example, DOM is not part of the default Javascript language spec. In the same way, Node includes a set of methods for FileSystem or process management which are not part of the es spec.
+It's important to understand the difference between Javascript in the browser and Javascript in Node. Browsers have V8 included, which allows them to parse and compile Javascript- the basic set of instructions- plus a set of browser-specific features. For example, DOM is not part of the default Javascript language spec. In the same way, Node includes a set of methods, such as:
 
 - Buffers
 - C++ Addons
