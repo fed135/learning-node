@@ -4,32 +4,38 @@ A comprehensive and step-by-step approach to learning back-end service developme
 
 ## Table of contents
 
-- [Disclaimer](#disclaimer)
-- [Prerequisite](#prerequisite)
-- [Chapter 1 - What is Node](#chapter-1)
-  - [In a (nut)shell](#in-a-nutshell)
-  - [The event loop](#the-event-loop)
-  - [Added features](#added-features)
-- [Chapter 2 - Running Javascript in the terminal](#chapter-2)
-  - ...
-- [Chapter 3 - Building a script](#chapter-3)
-  - ...
-- [Chapter 4 - Modules and dependencies](#chapter-4)
-  - ...
-- [Chapter 5 - Web servers, the basics](#chapter-5)
-  - ...
-- [Chapter 6 - Express, middlewares and the Rails way](#chapter-6)
-  - ...
-- [Chapter 7 - Adding data](#chapter-7)
-  - ...
-- [Chapter 8 - Tests](#chapter-8)
-  - ...
-- [Chapter 9 - Docs and validation](#chapter-9)
-  - ...
-- [Chapter 10 - Moving to production](#chapter-10)
-  - ...
-- [Epilogue](#epilogue)
-- [Acknowledgements](#acknowledgements)
+> - **[Disclaimer](#disclaimer)**
+> - **[Prerequisite](#prerequisite)**
+> - **[Chapter 1 - What is Node](#chapter-1)**
+>   - [In a (nut)shell](#in-a-nutshell)
+>   - [The event loop](#the-event-loop)
+>   - [Added features](#added-features)
+> - **[Chapter 2 - Running Javascript in the terminal](#chapter-2)**
+>   - [Using the REPL](#using-the-repl)
+> - **[Chapter 3 - Building a script](#chapter-3)**
+>   - [Creating a .js file](#creating-a-js-file)
+>   - [Exit conditions](#exit-conditions)
+>   - [Exceptions](#exceptions)
+>   - [Process arguments](#process-arguments)
+> - **[Chapter 4 - Modules and dependencies](#chapter-4)**
+>   - [Modules](#modules)
+>   - [Require](#require)
+>   - [NPM](#npm)
+> - **[Chapter 5 - Web servers, the basics](#chapter-5)**
+>   - [The http module](#the-http-module)
+> - **[Chapter 6 - Express, middlewares and the Rails way](#chapter-6)**
+>   - [Routing](#routing)
+>   - [Express controllers](#express-controllers)
+> - **[Chapter 7 - Adding data](#chapter-7)**
+>   - [Setting up mongo]
+> - [Chapter 8 - Tests](#chapter-8)
+>  - ...
+> - [Chapter 9 - Docs and validation](#chapter-9)
+>  - ...
+> - [Chapter 10 - Moving to production](#chapter-10)
+>  - ...
+> - [Epilogue](#epilogue)
+> - [Acknowledgements](#acknowledgements)
 
 #### Disclaimer
 
