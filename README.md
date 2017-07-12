@@ -7,7 +7,7 @@ A comprehensive and step-by-step approach to learning back-end service developme
 - [Disclaimer](#disclaimer)
 - [Prerequisite](#prerequisite)
 - [Chapter 1 - What is Node](#chapter-1)
-  - [In a nut(shell)](#in-a-nutshell)
+  - [In a (nut)shell](#in-a-nutshell)
   - [The event loop](#the-event-loop)
   - [Added features](#added-features)
 - [Chapter 2 - Running Javascript in the terminal](#chapter-2)
@@ -61,7 +61,7 @@ The exercices will use the syntax and features of Node 4+
 ## Chapter 1
 *What is Node ?*
 
-### In a nut(shell)
+### In a (nut)shell
 
 First, some definitions. Javascript (js) is a programming language. It represents a set of keywords and an estiblished syntax based on the EcmaScript (es) specification. Javascript itself is not an application or a runtime. It needs to be parsed, interpreted and compiled - in realtime- by an engine. Such engines can be found in the form of runtimes or baked in applications like web browsers.
 
@@ -104,6 +104,25 @@ It's important to understand the difference between Javascript in the browser an
 ## Chapter 2
 *Running Javascript in the terminal*
 
+Open a terminal window and type:
+
+`node`
+
+This should enter the REPL mode (Read–Eval–Print Loop), meaning that your terminal now behaves like the interactive console you can find in your browsers. You can enter commands and see them execute in real-time.
+
+Let's try it out. Type the following, then press enter:
+
+`1+1`
+
+On the next line, you will see the result of the operation you entered on the first line (That should equal `2`, if my math is correct)
+
+Now, let's try some *real* Javascript.
+
+    function say_hi(name) { console.log(`Hi, ${name}!`); }
+    
+This will create a function. The REPL has the ability to retain the result and context of previous commands, so let's try to call that function we just created. You'll notice that the REPL also offers auto-completion/ typing suggestions just like unix shells. 
+
+Next chapter, we'll try to write a script in a .js file and run it in the terminal.
 
 [top](#table-of-contents)
 
@@ -112,6 +131,77 @@ It's important to understand the difference between Javascript in the browser an
 ## Chapter 3
 *Building a script*
 
+Ok, you can now open the code editor of your choice. My personal favorite is [VS Code](https://code.visualstudio.com/).
+
+Create a file named `index.js`
+
+Let's try copying the same function we had in the previous chapter. Put this inside:
+
+    function say_hi(name) { 
+        console.log(`Hi, ${name}!`); 
+    }
+    
+    say_hi('John');
+    
+Once that you have saved the file, you can now execute it by running
+
+`node index.js`
+
+*Make sure that you exited the REPL first*
+
+Running this script should output `Hi, John!` in your console. You'll also notice that, unlike the REPL, the script exits as soon as it reaches the end of the file and that it no longer needs to wait for anything. For example, if we had a timer running, it would prevent it from exiting.
+
+Let try it out:
+
+    function say_hi(name) { 
+        console.log(`Hi, ${name}!`); 
+    }
+    
+    setTimeout(() => {
+      say_hi('John');
+    }, 1000);
+    
+    console.log('End of the file');
+    
+When running this script, you'll see that even though the execution thread reached the end of the file, it noticed that a timer was running, and waited for it to finish.
+
+In Javascript though, there are exceptions... litterally. For instance, if your code has an error or throws an exception, the program will exit- regardless of the current state of things. You can observe it by volontarily inserting an error in our program.
+
+    function say_hi(name) { 
+        console.log(`Hi, ${name}!`); 
+    }
+    
+    setTimeout(() => {
+      say_hi('John');
+    }, 1000);
+    
+    this.function.does.not.exist();
+    
+    console.log('End of the file');
+
+You'll notice that we don't reach the end of the file, nor get the message at the end of the timeout- the program just quits.
+
+Next, we'll want to call our script as if it were a utility, by passing process arguments.
+
+Processing input arguments and environment variables can be done simply, in a fashion similar to how Python does it.
+
+    function say_hi(name) { 
+        console.log(`Hi, ${name}!`); 
+    }
+    
+    // Process Arguments ['node', 'index.js', ...]
+    say_hi(process.argv[2]);
+    
+    // Process Environment variables
+    say_hi(process.env.USER);
+    
+Running this script like this:
+
+    node index.js John
+
+Should will push `John` to the array of process arguments `process.argv`, allowing you to use it inside your code. Notice that you can also read from process environement variables from the `process.env` object.
+
+These tools make Node.js a pretty neat language for writing small tools and scripts simply and easily.
 
 [top](#table-of-contents)
 
@@ -119,6 +209,8 @@ It's important to understand the difference between Javascript in the browser an
 
 ## Chapter 4
 *Modules and dependencies*
+
+Most of the time, you will want to split your code into multiple files, or leverage other people's code in your application. This is where the `module.exports` and `require` statements come into play.
 
 
 [top](#table-of-contents)
@@ -128,6 +220,7 @@ It's important to understand the difference between Javascript in the browser an
 ## Chapter 5
 *Web servers, the basics*
 
+As we saw in the previous chapters, scripts only run until they reach the end of the program, or until all timers are completed. There is actually another condition that would prevent a process from naturally ending: It's waiting for communication.
 
 [top](#table-of-contents)
 
