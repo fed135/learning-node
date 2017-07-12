@@ -104,6 +104,8 @@ It's important to understand the difference between Javascript in the browser an
 ## Chapter 2
 *Running Javascript in the terminal*
 
+### Using the REPL
+
 Open a terminal window and type:
 
 `node`
@@ -133,6 +135,8 @@ Next chapter, we'll try to write a script in a .js file and run it in the termin
 
 Ok, you can now open the code editor of your choice. My personal favorite is [VS Code](https://code.visualstudio.com/).
 
+### Creating a .js file
+
 Create a file named `index.js`
 
 Let's try copying the same function we had in the previous chapter. Put this inside:
@@ -149,7 +153,11 @@ Once that you have saved the file, you can now execute it by running
 
 *Make sure that you exited the REPL first*
 
-Running this script should output `Hi, John!` in your console. You'll also notice that, unlike the REPL, the script exits as soon as it reaches the end of the file and that it no longer needs to wait for anything. For example, if we had a timer running, it would prevent it from exiting.
+Running this script should output `Hi, John!` in your console. 
+
+### Exit conditions
+
+You'll notice that, unlike the REPL, the script exits as soon as it reaches the end of the file and that it no longer needs to wait for anything. For example, if we had a timer running, it would prevent it from exiting.
 
 Let try it out:
 
@@ -164,6 +172,8 @@ Let try it out:
     console.log('End of the file');
     
 When running this script, you'll see that even though the execution thread reached the end of the file, it noticed that a timer was running, and waited for it to finish.
+
+### Exceptions
 
 In Javascript though, there are exceptions... litterally. For instance, if your code has an error or throws an exception, the program will exit- regardless of the current state of things. You can observe it by volontarily inserting an error in our program.
 
@@ -180,6 +190,8 @@ In Javascript though, there are exceptions... litterally. For instance, if your 
     console.log('End of the file');
 
 You'll notice that we don't reach the end of the file, nor get the message at the end of the timeout- the program just quits.
+
+### Process arguments
 
 Next, we'll want to call our script as if it were a utility, by passing process arguments.
 
@@ -212,6 +224,14 @@ These tools make Node.js a pretty neat language for writing small tools and scri
 
 Most of the time, you will want to split your code into multiple files, or leverage other people's code in your application. This is where the `module.exports` and `require` statements come into play.
 
+### Modules
+
+
+### Require
+
+
+### NPM
+
 
 [top](#table-of-contents)
 
@@ -222,12 +242,19 @@ Most of the time, you will want to split your code into multiple files, or lever
 
 As we saw in the previous chapters, scripts only run until they reach the end of the program, or until all timers are completed. There is actually another condition that would prevent a process from naturally ending: It's waiting for communication.
 
+### The HTTP module
+
+
 [top](#table-of-contents)
 
 ---
 
 ## Chapter 6
 *Express, middlewares and the Rails way*
+
+### Routing
+
+### Express controllers
 
 
 [top](#table-of-contents)
@@ -237,6 +264,8 @@ As we saw in the previous chapters, scripts only run until they reach the end of
 ## Chapter 7
 *Adding data*
 
+### Setting up Mongo
+
 
 [top](#table-of-contents)
 
@@ -244,6 +273,14 @@ As we saw in the previous chapters, scripts only run until they reach the end of
 
 ## Chapter 8
 *Tests*
+
+### Unit testing
+
+### Integration testing
+
+### Mocha
+
+### Chai
 
 
 [top](#table-of-contents)
@@ -253,6 +290,13 @@ As we saw in the previous chapters, scripts only run until they reach the end of
 ## Chapter 9
 *Docs and validation*
 
+### Code documentation
+
+### JSDoc
+
+### API Documentation
+
+### Swagger
 
 [top](#table-of-contents)
 
@@ -261,6 +305,17 @@ As we saw in the previous chapters, scripts only run until they reach the end of
 ## Chapter 10
 *Moving to production*
 
+### Process Daemon
+
+### Clustering
+
+### Reverse Proxying
+
+### Monitoring
+
+### Caching
+
+### SSL
 
 [top](#table-of-contents)
 
@@ -269,6 +324,9 @@ As we saw in the previous chapters, scripts only run until they reach the end of
 ## Epilogue
 *The Node and the Ecosystem*
 
+### Syntaxes and flavors
+
+### Trustable packages and how to find them
 
 [top](#table-of-contents)
 
@@ -276,7 +334,7 @@ As we saw in the previous chapters, scripts only run until they reach the end of
 
 ## Acknowledgements
 
-
+The awesome people at [Shutterstock](https://tech.shutterstock.com/) and the gang at Slacker-News for their support and council.
 
 [top](#table-of-contents)
 
