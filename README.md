@@ -27,21 +27,33 @@ A comprehensive and step-by-step approach to learning back-end service developme
 >   - [Routing](#routing)
 >   - [Express controllers](#express-controllers)
 > - **[Chapter 7 - Adding data](#chapter-7)**
->   - [Setting up mongo]
-> - [Chapter 8 - Tests](#chapter-8)
->  - ...
-> - [Chapter 9 - Docs and validation](#chapter-9)
->  - ...
-> - [Chapter 10 - Moving to production](#chapter-10)
->  - ...
-> - [Epilogue](#epilogue)
-> - [Acknowledgements](#acknowledgements)
+>   - [Setting up mongo](#setting-up-mongo)
+> - **[Chapter 8 - Tests](#chapter-8)**
+>   - [Mocha](#mocha)
+>   - [Chai](#chai)
+>   - [Sinon](#sinon)
+>   - [Unit testing](#unit-testing)
+>   - [Integration testing](#integration-testing)
+> - **[Chapter 9 - Docs and validation](#chapter-9)**
+>   - [Code documentation](#code-documentation)
+>   - [API documentation](#api-documentation)
+> - **[Chapter 10 - Moving to production](#chapter-10)**
+>   - [Process Daemon](#process-daemon)
+>   - [Clustering](#clustering)
+>   - [Security](#security)
+>   - [Monitoring](#monitoring)
+> - **[Epilogue](#epilogue)**
+>   - [Syntaxes and flavors](#syntaxes-and-flavors)
+>   - [Trustable packages and how to find them](#trustable-packages-and-how-to-find-them)
+>   - [Multi-threading](#multi-threading)
+>   - [Boilerplates](#boilerplates)
+> - **[Acknowledgements](#acknowledgements)**
 
 #### Disclaimer
 
 > This is a work in progress. Feel free to contribute!
 >
-> I'm not a great writer (and English isn't my mother tongue). I appreciate pointers or corrections.
+> I'm not a great writer. I appreciate pointers and/or corrections.
 >
 > I've been doing Node.js professionnaly for 5+ years and have been in software development for ~12 years, yet I don't claim to know everything. Furthermore, mentorship is somewhat new to me. Input, wether it be technical or in my approach is always welcomed.
 
@@ -280,13 +292,15 @@ As we saw in the previous chapters, scripts only run until they reach the end of
 ## Chapter 8
 *Tests*
 
-### Unit testing
-
-### Integration testing
-
 ### Mocha
 
 ### Chai
+
+### Sinon
+
+### Unit testing
+
+### Integration testing
 
 
 [top](#table-of-contents)
@@ -298,11 +312,7 @@ As we saw in the previous chapters, scripts only run until they reach the end of
 
 ### Code documentation
 
-### JSDoc
-
 ### API Documentation
-
-### Swagger
 
 [top](#table-of-contents)
 
@@ -315,13 +325,9 @@ As we saw in the previous chapters, scripts only run until they reach the end of
 
 ### Clustering
 
-### Reverse Proxying
+### Security
 
 ### Monitoring
-
-### Caching
-
-### SSL
 
 [top](#table-of-contents)
 
@@ -333,6 +339,10 @@ As we saw in the previous chapters, scripts only run until they reach the end of
 ### Syntaxes and flavors
 
 ### Trustable packages and how to find them
+
+### Multi-threading
+
+### Boilerplates
 
 [top](#table-of-contents)
 
