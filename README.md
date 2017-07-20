@@ -2,6 +2,10 @@
 
 A comprehensive and step-by-step approach to learning back-end service development in Node.js
 
+<h1 align="center">
+<img alt="Kalm" width="320px" align="center" src="http://res.cloudinary.com/kalm/image/upload/v1500584817/course_logo_npcy67.png" />
+</h1>
+
 ## Table of contents
 
 > - **[Disclaimer](#disclaimer)**
@@ -57,6 +61,7 @@ A comprehensive and step-by-step approach to learning back-end service developme
 >
 > I've been doing Node.js professionnaly for 5+ years and have been in software development for ~12 years, yet I don't claim to know everything. Furthermore, mentorship is somewhat new to me. Input, wether it be technical or in my approach is always welcomed.
 
+---
 
 #### Prerequisite
 
@@ -75,6 +80,7 @@ A comprehensive and step-by-step approach to learning back-end service developme
   
 The exercices will use the syntax and features of Node 4+
 
+---
 
 ## Chapter 1
 *What is Node ?*
